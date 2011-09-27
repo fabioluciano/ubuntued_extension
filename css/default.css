@@ -1,0 +1,9 @@
+* {font-size: 9pt;}
+body {width: 300px; !important}
+#header {text-align:center;}
+ul{padding:0;margin:0;}
+ul li {list-style: none outside none;}
+#twitter p {padding:0;margin:0;}
+#rss *, #twitter *, #facebook * {font-size: 8pt; !important}
+#rss a {text-decoration: none;}
+#rss a:hover{color:#DD570A;}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ubuntued</title>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/base/jquery-ui.css" type="text/css" media="all" />
+
+        <link rel="stylesheet" media="screen" href="css/default.css">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/i18n/jquery-ui-i18n.min.js"></script>
+        <script src="https://www.google.com/jsapi?key=ABQIAAAArdx35UT-ll0ynPUHZ_aYQxQdtQvdNpN9w_5zqqwi6bJD2FSoqxSX9UQGYmyCpsbc5ig6MQ4cQ8DUVA" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery.tweetable.min.js"></script>
+
+        <script type="text/javascript" src="js/default.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="header"><img src="img/logo.png" /></div>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#rss">rss</a></li>
+                    <li><a href="#twitter">twitter</a></li>
+                    <li><a href="#facebook">facebook</a></li>
+                </ul>
+                
+                <div id="rss">Carregando...</div>
+                <div id="twitter"></div>
+                <div id="facebook">
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) {return;}
+                      js = d.createElement(s); js.id = id;
+                      js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+
+                    <fb:activity site="ubuntued.info" width="270" height="300" header="false" recommendations="false"></fb:activity>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
